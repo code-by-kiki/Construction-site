@@ -1,0 +1,244 @@
+h1,p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+}
+
+.navbar {
+  background: transparent;
+  box-shadow: none; /* remove shadow */
+}
+
+.nav-link{
+   font-family:'Montserrat',sans-serif ;
+}
+
+button:hover{
+  box-shadow: 0 4px 8px 0 rgba(250, 225, 0, 0.629);
+}
+
+.Residential{
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: bgSlide 15s infinite;
+}
+
+.overlay{
+  
+  color: white;
+}
+
+@keyframes bgSlide{
+  0% {background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/residential.jpg);}
+  33%{background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/Assets/residential1.jpg);}
+  66%{background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(/Assets/residential2.webp);}
+  100%{background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/residential.jpg);}
+}
+
+.line{
+  border: #F2A900;
+  height: 4px;
+  width: 10rem;
+  color: #F2A900;
+  background-color: orange;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon::before {
+
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: darkblue; /* color shows through mask */
+
+  -webkit-mask-image: url(/Assets/icon.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: url(/Assets/icon.png);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.content {
+  font-size: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.carousel {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #ffffff;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge */
+}
+
+/* hide scrollbar in Chrome/Safari/Edge */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: inline-flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  background: #fff;
+  width: 430px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  height: 320px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 22px rgba(0, 0, 0, 0.2);
+}
+
+.img-wrap {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #eaeaea;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  display: block;
+}
+
+.card h5 {
+  padding: 10px 0;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* fixed */
+}
+
+@media(max-width:640px) {
+  .card { width: 200px; height: 300px; }
+  .img-wrap { height: 150px; }
+}
+
+.testimonial-section{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+gap:7rem;
+justify-items: center;
+
+}
+
+.testimonial-card{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align:center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover{
+   transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(218, 215, 215, 0.5);
+}
+
+.testimonial-card img{
+  width: 100px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .quto{
+  font-style: italic;
+  font-family:" 'Poppins', sans-serif";
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.testimonial-card h4{
+   font-family: 'Oswald', sans-serif;
+ font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion-item h2{
+ font-family: 'Roboto', sans-serif;
+ font-size: 20px; 
+}
+
+.accordion-body p{
+  font-size: px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Accordion buttons */
+.accordion-button {
+   background-color: #2a9d8f;
+  color: #fff;
+  border-radius: 6px;
+  padding: 12px 16px;
+  transition: 0.3s;
+
+}
+
+.accordion-button:hover {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+
+
+.home:hover{
+    transform: scale(1.05);
+}
+
+.contact{
+    background-image: url(/Assets/contact.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+   min-height: 80vh; 
+   background-size: cover;
+   color: black;
+}

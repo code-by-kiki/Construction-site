@@ -1,0 +1,41 @@
+h1,p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+}
+
+.navbar {
+  background: transparent;
+  box-shadow: none; /* remove shadow */
+}
+
+.nav-link{
+   font-family:'Montserrat',sans-serif ;
+}
+
+button:hover{
+  box-shadow: 0 4px 8px 0 rgba(250, 225, 0, 0.629);
+}
+
+.renovation {
+    height: 60vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    animation: bgSlide 15s infinite;
+}
+
+.overlay {
+    color: white;
+}
+
+@keyframes bgSlide {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/renovation.webp);
+    }
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/renovation1.webp);
+    }
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/renovation.webp);
+    }
+}
