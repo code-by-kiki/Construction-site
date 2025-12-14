@@ -1,39 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/Assets/favicon.png">
+  <link rel="stylesheet" href="/Css/project.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>MetroBuild</title> 
 </head>
 <body>
-   <nav class="navbar navbar-expand-sm d-flex  d-flex  navbar-dark fixed-top " style="color: white;background-color:black;">
+    <section>
+     <div class="Project text-dark ">
+      <div class="contact-banner text-white py-2 px-3">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 text-center text-md-start" style="font-size: 15px;">
+      <span><i class="bi bi-telephone"></i>+91-6546568799</span>
+      <span><i class="bi bi-envelope"></i>MetroBuild@gmail.com</span>
+      <span><i class="bi bi-geo-alt"></i>No.2, Main Road, Anna Nagar, Chennai</span>
+    </div>
+  </div>
+</div>
+    <nav class="navbar navbar-expand-sm d-flex  d-flex  navbar-dark  " style="background-color:transparent">
     <div class="container-fluid">
-      <a class="navbar-brand text-light" href="/Html/Home.html"><h1> <img src="/Assets/favicon.png" alt="pic" width="50px" height="auto" class="navImage">  MetroBuild</h1></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <a class="navbar-brand text-dark" href="/Html/Home.html"><h1> <img src="/Assets/favicon.png" alt="pic" width="50px" height="auto" class="navImage">  MetroBuild</h1></a>
+      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"  style="margin-right:150px;">
+      <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavbar"  style="margin-right:150px;">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-decoration-none text-light" role="button" data-bs-toggle="dropdown">
+            <a href="#" class="nav-link dropdown-toggle text-decoration-none text-dark" role="button" data-bs-toggle="dropdown">
               Page
             </a>
             <ul class="dropdown-menu ">
-             <li><a href="/Html/Pages/commercial.html" class="dropdown-item text-decoration-none ">Commercial</a></li>
+              <li><a href="/Html/Pages/commercial.html" class="dropdown-item text-decoration-none ">Commercial</a></li>
               <li><a href="/Html/Pages/Residential.html" class="dropdown-item text-decoration-none  ">Residential</a></li>
-              <li><a href="/Html/Pages/Renovation.html" class="dropdown-item text-decoration-none ">Renovation</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="/Html/About.html" class="nav-link text-light">About</a></li>
-           <li class="nav-item"><a href="/Html/Services.html" class="nav-link">Service</a></li>
-          <li class="nav-item"><a href="/Html/Project.html" class="nav-link text-light">Project</a></li>
-          <li class="nav-item"><a href="/Html/Contact.html" class="nav-link text-light">Contact</a></li>
+          <li class="nav-item"><a href="/Html/About.html" class="nav-link text-dark">About</a></li>
+          <li class="nav-item"><a href="/Html/Services.html" class="nav-link  text-dark">Service</a></li>
+          <li class="nav-item"><a href="/Html/Project.html" class="nav-link text-dark">Project</a></li>
+          <li class="nav-item"><a href="/Html/Contact.html" class="nav-link text-dark">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-    <h1>hello</h1>
+<!-- Header -->
+   <header class="">
+     <div class="contanier mb-5">
+      <div class="row">
+        <div class="col-lg-7 col-md-12 col-sm-12 " style="margin-top: 7rem;margin-left: 5.5rem;">
+          <div class="">
+            <div class="overlay">
+                <h1 style="font-size: 70px;"><b>Project</b></h1>
+             <p style="font-size: 20px;"><a href="/Html/Home.html" class="text-decoration-none text-dark">Home</a> > <a href="/Html/Service/commercial.html" class="text-decoration-none text-dark">Project</a> </p>   
+             <p>Building Excellence, Project by Project</p>
+             <button class="btn btn-warning mt-4 header "> <a href="/Html/Contact.html" class="text-decoration-none text-dark">Contact Us</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </header>
+   </div>
+ </section>
+
+ <section class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center">Completed Project</h3>
+        <div class="line mx-auto"></div>
+         
+
+        <div class="filter-section mt-5 mb-5 d-flex gap-3">
+          <button class="filter-btn" data-filter="Residential">Residential</button>
+          <button class="filter-btn" data-filter="Commercial">Commercial</button>
+          <button class="filter-btn" data-filter="Renovation">Renovation</button>
+          <button class="filter-btn" data-filter="all">Show All</button>
+       </div>
+
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-lg-4 col-sm-12 project-col">
+              <div class="project-card card " data-category="Residential">
+                <img src="/Assets/residential-renovation.webp" alt="Residential" class="mb-3">
+                <p>Individual Villa - chennai</p>
+              </div>
+              </div>
+              <div class="col-md-3 col-lg-4 col-sm-12 project-col">
+              <div class="project-card card " data-category="Renovation">
+                <img src="/Assets/commerical-renovation.jpg" alt="Residential" class="mb-3">
+                <p>Offices Renovation - chennai</p>
+              </div>
+              </div>
+               <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card " data-category="Commercial">
+                <img src="/Assets/warehouse.webp" alt="Residential" class="mb-3">
+                <p>warehouse - chennai</p>
+              </div>
+              </div>
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card" data-category="Commercial">
+                <img src="/Assets/commercial1.jpeg" alt="Residential" class="mb-3">
+                <p>Offices - chennai </p>
+              </div>
+              </div>
+             
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card " data-category="Residential">
+                <img src="/Assets/duplexhouse.jpg" alt="Residential" class="mb-3">
+                <p>duplexhouse - chennai</p>
+              </div>
+              </div>
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card" data-category="Residential">
+                <img src="/Assets/permiumhouse.jpg" alt="Residential" class="mb-3">
+                <p>permiumhouse - chennai</p>
+              </div>
+              </div>
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card " data-category="Renovation">
+                <img src="/Assets/bathroom-renovation.webp" alt="Residential" class="mb-3">
+                <p>Bathroom Renovation - chennai</p>
+              </div>
+              </div>
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card" data-category="Residential">
+                <img src="/Assets/kitchen-renovation.webp" alt="Residential" class="mb-3">
+                <p>kitchen Renovation - chennai</p>
+              </div>
+               </div>
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card" data-category="Residential">
+                <img src="/Assets/farmhouse.jpg" alt="Residential" class="mb-3">
+                <p>Fram House - chennai</p>
+              </div>
+              </div>
+             
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card" data-category="Commercial">
+                <img src="/Assets/commercial.jpeg" alt="Residential" class="mb-3">
+                <p>Company - chennai</p>
+              </div>
+              </div>
+              <div class="col-md- col-lg-4 col-sm-12 project-col">
+              <div class="project-card card" data-category="Residential">
+                <img src="/Assets/Apartment.jpg" alt="Residential" class="mb-3">
+                <p>Apartment - chennai</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+<section class="mt-5">
+ <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="text-center">On-Going Project</h3>
+      <div class="line mx-auto"></div>
+
+     <div class="filter d-flex gap-3">
+  <button class="filter-btn-onproject" data-filter="Residential">Residential</button>
+  <button class="filter-btn-onproject" data-filter="Commercial">Commercial</button>
+  <button class="filter-btn-onproject" data-filter="Renovation">Renovation</button>
+  <button class="filter-btn-onproject" data-filter="all">Show All</button>
+</div>
+
+
+      <div class="container-fluid mt-5">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-sm-12 col">
+            <div class="on-project card" data-category="Residential">
+              <img src="/Assets/residential-ongoing.webp" alt="Residential" class="mb-3">
+              <p>duplexhouse -chennai</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col">
+            <div class="on-project card" data-category="Residential">
+              <img src="/Assets/residential-ongoing1.jpeg" alt="Residential" class="mb-3">
+              <p>Budget House - chennai</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col">
+            <div class="on-project card" data-category="Commercial">
+              <img src="/Assets/commercial-ongoing.webp" alt="Residential" class="mb-3">
+              <p>Mall - chennai</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col">
+            <div class="on-project card" data-category="Commercial">
+              <img src="/Assets/commercial-ongoing1.jpg" alt="Residential" class="mb-3">
+              <p>Mall - chennai</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col">
+            <div class="on-project card" data-category="Renovation">
+              <img src="/Assets/renovation.jpg" alt="Residential" class="mb-3">
+              <p>House Renovation - chennai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<div class="contact mt-5 ">
+  <div class="container">
+    <div class="row" >
+      <div class="col-lg-4 col-md-4 col-sm-12  justify-content-center align-items-center"style="margin-top: 10rem;">
+        <h1 class="mt-3 p-3">Contact Us</h1>
+        <h3 class="p-3">Let's Bulid your vision with quality, trust and expertise</h3>
+         <button class="btn btn-warning p-3 justify-content-center"><a href="/Html/Contact.html" class="text-decoration-none text-dark">Contact Us</a> </button>
+      </div>
+       
+    </div>
+  </div>
+</div>
+
+
+ <footer class="footer text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title">About Us</h5>
+        <p class="footer-text">
+          We are a professional construction & contracting company delivering complete building solutions 
+          from planning to execution. Our expert team ensures quality workmanship, transparent communication, 
+          and timely project delivery for residential, commercial, and renovation projects.
+        </p>
+
+        <div class="footer-social">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="/Html/Home.html">Home</a></li>
+          <li><a href="/Html/About.html">About</a></li>
+          <li><a href="/Html/Pages/Residential.html">Residential</a></li>
+          <li><a href="/Html/Pages/commercial.html">Commercial</a></li>
+          <li><a href="/Html/Services.html">Services</a></li>
+          <li><a href="/Html/Project.html">Projects</a></li>
+          <li><a href="/Html/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Terms -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Terms & Conditions</h5>
+        <p class="footer-text">
+          All construction services are provided as per agreed specifications, drawings, and timelines. 
+          Project duration may vary due to site conditions, weather, or material availability. 
+          Additional work beyond scope will be charged separately.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact Info</h5>
+        <ul class="footer-contact">
+          <li><i class="bi bi-telephone"></i> +91 65465 68799</li>
+          <li><i class="bi bi-geo-alt"></i> No.2, Main Road, Anna Nagar, Chennai</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+const projectCols = document.querySelectorAll('.project-col');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.dataset.filter;
+
+    projectCols.forEach(col => {
+      const card = col.querySelector('.project-card');
+      if (filter === "all" || card.dataset.category === filter) {
+        col.style.display = "block"; 
+      } else {
+        col.style.display = "none"; 
+      }
+    });
+  });
+});
+
+const Button = document.querySelectorAll('.filter-btn-onproject');
+const projectcol = document.querySelectorAll('.col');
+
+Button.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.dataset.filter;
+
+    projectcol.forEach(col => {
+      const image = col.querySelector('.on-project');
+      if (filter === "all" || image.dataset.category === filter) {
+        col.style.display = "block";
+      } else {
+        col.style.display = "none";
+      }
+    });
+  });
+});
+
+</script>
+
+
 </body>
 </html>

@@ -14,10 +14,19 @@
 <body>
     <section>
    <div class="about text-dark">
+      <div class="contact-banner text-white py-2 px-3">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 text-center text-md-start" style="font-size: 15px;">
+      <span><i class="bi bi-telephone"></i> +91-6546568799</span>
+      <span><i class="bi bi-envelope"></i> MetroBuild@gmail.com</span>
+      <span><i class="bi bi-geo-alt"></i> No.2, Main Road, Anna Nagar, chennai</span>
+    </div>
+  </div>
+</div>
     <nav class="navbar navbar-expand-sm d-flex  d-flex  navbar-dark " style="color: white;background-color:transparent;">
     <div class="container-fluid">
       <a class="navbar-brand text-dark" href="/Html/Home.html"><h1> <img src="/Assets/favicon.png" alt="pic" width="80px" height="auto" class="navImage">  MetroBuild</h1></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"  style="margin-right:150px;">
@@ -29,7 +38,6 @@
             <ul class="dropdown-menu ">
                <li><a href="/Html/Pages/commercial.html" class="dropdown-item text-decoration-none ">Commercial</a></li>
               <li><a href="/Html/Pages/Residential.html" class="dropdown-item text-decoration-none  ">Residential</a></li>
-              <li><a href="/Html/Pages/Renovation.html" class="dropdown-item text-decoration-none ">Renovation</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="/Html/About.html" class="nav-link text-dark">About</a></li>
@@ -51,13 +59,16 @@
           </div>
         </div>
       </div>
+      
     </div>
+ 
+
   </section>
 
   <section class=" jounary" style="margin-top: 5rem;">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 d-flex justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center d-none d-md-block">
                   <div class="image" style="padding: px; border: 3px solid;border-color: orange; margin-right: 50px;">
                   <img src="/Assets/jounary.webp" alt="jounary" class="img-fulid" width="500px" style=" position: relative;top: -30px; right: 40px; z-index: 1; box-shadow: 1px black;"/>
                   </div>
@@ -95,7 +106,7 @@
   <section class="why-choose-use">
 
  <div class="row align-items-center" style="margin-top: 5rem;">
-  <div class="col-lg-6 col-md-6 col-sm-12 img-stuck">
+  <div class="col-lg-6 col-md-6 col-sm-12 img-stuck d-none d-md-block">
     <img src="/Assets/building.jpg" alt="Building" width="600px" class="rounded-4 mx-auto d-block" />
   </div>
   <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -140,7 +151,62 @@
   </section>
 
   <section class="value" style="margin-top: 5rem;">
-   <div class="container">
+   <div class="container d-block d-md-none">
+    <div class="row">
+      <div class="col-12">
+         <h3 class="mb-2"> Our Value </h3>
+                 <div class="line" style="width: 10%;"></div>
+                <div class="d-flex justify-content-between align-items-start" style="gap:5rem; flex-wrap:nowrap;">
+          <div class="d-flex flex-column align-items-center ms-3">
+            <div class="row">
+                <div class="commitment  p-3 rounded-4" style="background-color:#1E4DB7; width:150px;">
+                  <img src="/Assets/commitment.png" alt="Commitment" width="100"/>
+                </div>
+             <div class="commitment-text mt-3 text-center" style="max-width:300px;">
+                <p>We stay fully dedicated to delivering every project with responsibility and precision</p>
+            </div>
+          </div>
+
+  <div class="d-flex flex-column align-items-center mt-3">
+    <div class="row">
+      <div class="quality  p-3 rounded-4" style="background-color:#D4A017; width:150px;">
+      <img src="/Assets/Quality.png" alt="Quality" width="100"/>
+    </div>
+    <div class="commitment-text mt-3 text-center" style="max-width:300px;">
+      <p>We ensure superior construction through premium materials and skilled workmanship</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column align-items-center mt-3">
+   <div class="row">
+     <div class="innovation  p-3 rounded-4" style="background-color:#7A3EF0; width:150px;">
+      <img src="/Assets/innovation.png" alt="Innovation" width="100"/>
+    </div>
+    <div class="commitment-text mt-3 text-center" style="max-width:300px;">
+      <p>We use modern technologies and creative solutions to build smarter, efficient spaces</p>
+    </div>
+   </div>
+  </div>
+
+  <div class="d-flex flex-column align-items-center mt-3">
+    <div class="row">
+      <div class="customer p-3 rounded-4" style="background-color:#009F9D; width:150px;">
+      <img src="/Assets/customer satifaction.png" alt="Customer Satisfaction" width="100"/>
+    </div>
+    <div class="commitment-text mt-3 text-center" style="max-width:300px;">
+      <p>We prioritize your needs and deliver results that meet and exceed expectations</p>
+    </div>
+    </div>
+  </div>
+</div>
+</div>           
+      </div>
+    </div>
+   </div>
+
+     
+   <div class="container d-none d-md-block">
     <div class="row">
       <div class="col-12">
          <h3 class="mb-2"> Our Value </h3>
@@ -157,7 +223,7 @@
 
   <div class="d-flex flex-column align-items-center">
     <div class="quality d-flex justify-content-center align-items-center p-3 rounded-4" style="background-color:#D4A017; width:150px;">
-      <img src="/Assets/quality.png" alt="Quality" width="100"/>
+      <img src="/Assets/Quality.png" alt="Quality" width="100"/>
     </div>
     <div class="commitment-text mt-3 text-center" style="max-width:300px;">
       <p>We ensure superior construction through premium materials and skilled workmanship</p>
@@ -185,7 +251,11 @@
       </div>
     </div>
    </div>
+
   </section>
+
+
+
 
  <section class="team-section py-5">
   <div class="container">
@@ -258,6 +328,7 @@
   </div>
 </section>
 
+<!-- Experiances -->
 <section>
  <div class="py-5 ">
    <div class="container-fluid bg-light  pt-5">
@@ -268,16 +339,16 @@
       </div>
     </div>
     <div class="row justify-content-center " style="gap: 10rem;" >
-      <div class="col-md-4 mb-4 text-center rounded " style="padding: 10px; width: 200px; height: 150px; background: linear-gradient(135deg,#325C80,#B0E0FA);">
-       <h2 class="counter" data-target="1500">0</h2>
+      <div class="col-md-4 mb-4 text-center rounded " style="padding: 10px; width: 200px; height: 150px; background: linear-gradient(135deg,#000000,#555e63);">
+       <h2 class="counter" data-target="500">0</h2>
        <p class="text-light ">Happy Customer</p>
       </div>
-      <div class="col-md-4 mb-4 text-center rounded " style="padding: 10px; width: 200px; height: 150px; background: linear-gradient(135deg,#3E6D9C,#E8EEF2);">
+      <div class="col-md-4 mb-4 text-center rounded " style="padding: 10px; width: 200px; height: 150px; background: linear-gradient(135deg,#000000,#555e63);">
        <h2 class="counter" data-target="350">0</h2>
        <p class="text-light ">Project Completed</p>
       </div>
-      <div class="col-md-4 mb-4 text-center rounded " style="padding: 10px; width: 200px; height: 150px; background: linear-gradient(135deg,#3E6D9C,#E8EEF2);">
-       <h2 class="counter" data-target="1500">0</h2>
+      <div class="col-md-4 mb-4 text-center rounded " style="padding: 10px; width: 200px; height: 150px; background: linear-gradient(135deg,#000000,#555e63);">
+       <h2 class="counter" data-target="10">0</h2>
        <p class="text-light ">Year of Experiences</p>
       </div>
     </div>
@@ -285,7 +356,7 @@
  </div>
 </section>
 
-<div class="contact mt-5 mb-5">
+<div class="contact mt-5 ">
   <div class="container">
     <div class="row" >
       <div class="col-lg-4 col-md-4 col-sm-12  justify-content-center align-items-center"style="margin-top: 10rem;">
@@ -299,72 +370,77 @@
 </div>
 
 
-<footer>
- <div class="conatainer" style="background-color: #0A1A2F; color: white;">
- <div class="row">
-  <div class="col-md-3 col-lg-3 mt-5 ms-4">
-    <h1 class="mb-5">MetroBuild</h1>
-      <p style="text-indent: 40px;margin-bottom: 50px;">We Provide Complete Construction and contracting services with a focus on Quality,Safety And Timely devilery.<br> Buliding home,offices and spaces that last for generation</p>
+<footer class="footer text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
 
-    <h2>Social Media </h2>
-    <p class=" d-flex gap-3 mt-4" style="text-indent: 20px;"><i class="bi bi-instagram"></i> <i class="bi bi-twitter-x"></i> <i class="bi bi-facebook"></i><i class="bi bi-youtube"></i></p>
-  </div>
-  <div class="col-md-3 mt-5 ms-5  ">
-  <h2 style="margin-bottom: 20px;">Quick Link</h2>
-     <div class="d-felx">
-      <h5> <a href="/Html/Home.html" class="text-decoration-none text-light mt-4 ms-5">Home</a></h5>
-      <h5> <a href="/Html/About.html" class="text-decoration-none text-light mt-4 ms-5">About</a></h5>
-      <h5> <a href="/Html/Service/Residential.html" class="text-decoration-none text-light mt-4 ms-5">Residential</a></h5>
-      <h5> <a href="/Html/Service/commerical.html" class="text-decoration-none text-light mt-4 ms-5">Commercial</a></h5> 
-      <h5> <a href="/Html/Service/Apartment.html" class="text-decoration-none text-light mt-4 ms-5">Apartment</a></h5>
-      <h5> <a href="/Html/Project.html" class="text-decoration-none text-light mt-4 ms-5">Project</a></h5>
-        <h5> <a href="/Html/Contact.html" class="text-decoration-none text-light mt-4 ms-5">Contact</a></h5>
-     </div>
-  </div>
-  
-  <div class="col-md-3 mt-5 ms-5  ">
-  <h2 style="margin-bottom: 20px;">Quick Link</h2>
-     <div class="d-felx">
-      <h5> <a href="/Html/Home.html" class="text-decoration-none text-light mt-4 ms-5">Home</a></h5>
-      <h5> <a href="/Html/About.html" class="text-decoration-none text-light mt-4 ms-5">About</a></h5>
-      <h5> <a href="/Html/Service/Residential.html" class="text-decoration-none text-light mt-4 ms-5">Residential</a></h5>
-      <h5> <a href="/Html/Service/commerical.html" class="text-decoration-none text-light mt-4 ms-5">Commercial</a></h5> 
-      <h5> <a href="/Html/Service/Apartment.html" class="text-decoration-none text-light mt-4 ms-5">Apartment</a></h5>
-      <h5> <a href="/Html/Project.html" class="text-decoration-none text-light mt-4 ms-5">Project</a></h5>
-        <h5> <a href="/Html/Contact.html" class="text-decoration-none text-light mt-4 ms-5">Contact</a></h5>
-     </div>
-  </div>
-  <div class="col-md-3 mt-5 ms-5  ">
-  <h2 style="margin-bottom: 20px;">Quick Link</h2>
-     <div class="d-felx">
-      <h5> <a href="/Html/Home.html" class="text-decoration-none text-light mt-4 ms-5">Home</a></h5>
-      <h5> <a href="/Html/About.html" class="text-decoration-none text-light mt-4 ms-5">About</a></h5>
-      <h5> <a href="/Html/Service/Residential.html" class="text-decoration-none text-light mt-4 ms-5">Residential</a></h5>
-      <h5> <a href="/Html/Service/commerical.html" class="text-decoration-none text-light mt-4 ms-5">Commercial</a></h5> 
-      <h5> <a href="/Html/Service/Apartment.html" class="text-decoration-none text-light mt-4 ms-5">Apartment</a></h5>
-      <h5> <a href="/Html/Project.html" class="text-decoration-none text-light mt-4 ms-5">Project</a></h5>
-        <h5> <a href="/Html/Contact.html" class="text-decoration-none text-light mt-4 ms-5">Contact</a></h5>
-     </div>
-  </div>
- </div>
- </div>
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title">About Us</h5>
+        <p class="footer-text">
+          We are a professional construction & contracting company delivering complete building solutions 
+          from planning to execution. Our expert team ensures quality workmanship, transparent communication, 
+          and timely project delivery for residential, commercial, and renovation projects.
+        </p>
 
+        <div class="footer-social">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="/Html/Home.html">Home</a></li>
+          <li><a href="/Html/About.html">About</a></li>
+          <li><a href="/Html/Pages/Residential.html">Residential</a></li>
+          <li><a href="/Html/Pages/commercial.html">Commercial</a></li>
+          <li><a href="/Html/Services.html">Services</a></li>
+          <li><a href="/Html/Project.html">Projects</a></li>
+          <li><a href="/Html/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Terms -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Terms & Conditions</h5>
+        <p class="footer-text">
+          All construction services are provided as per agreed specifications, drawings, and timelines. 
+          Project duration may vary due to site conditions, weather, or material availability. 
+          Additional work beyond scope will be charged separately.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact Info</h5>
+        <ul class="footer-contact">
+          <li><i class="bi bi-telephone"></i> +91 65465 68799</li>
+          <li><i class="bi bi-geo-alt"></i> No.2, Main Road, Anna Nagar, Chennai</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
 </footer>
-
 
 <script>
   const counters = document.querySelectorAll('.counter');
-  const speed = 100; // lower = faster
+  const speed = 200;
 
-  counters.forEach(counter => {
+  const startCounter = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    let count = 0;
+    const increment = target / speed;
+
     const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-
-      const increment = target / speed;
-
       if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
+        count += increment;
+        counter.innerText = Math.ceil(count);
         setTimeout(updateCount, 20);
       } else {
         counter.innerText = target;
@@ -372,7 +448,23 @@
     };
 
     updateCount();
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounter(entry.target);
+        observer.unobserve(entry.target); // runs only once
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  counters.forEach(counter => {
+    observer.observe(counter);
   });
 </script>
+
 </body>
 </html>

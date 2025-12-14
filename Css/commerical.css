@@ -12,7 +12,7 @@ h1,p{
    font-family:'Montserrat',sans-serif ;
 }
 
-button:hover{
+.header:hover{
  transform: scale(1.05);
  box-shadow: 0 4px 8px rgba(255, 232, 58, 0.7);
 }
@@ -53,7 +53,7 @@ button:hover{
 }
 
 .carousel{
-    padding: px 0;
+    padding: 1px 0;
     text-align: center;
     background-color: #ffffff;
     overflow-x: scroll;
@@ -76,7 +76,7 @@ button:hover{
 
 .card {
   background: #fff;
-  width: 430px;
+  width: 1030px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   border-radius: 12px;
   text-align: center;
@@ -109,18 +109,23 @@ button:hover{
   padding: 10px 0;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600; /* fixed */
+  font-weight: 600; 
+}
+
+.card image{
+  width: 500px;
 }
 
 @media(max-width:640px) {
   .card { width: 200px; height: 300px; }
-  .img-wrap { height: 150px; }
+  .img-wrap { height: 250px; }
 }
 
 .contact{
     background-image: url(/Assets/contact.webp);
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
    min-height: 80vh; 
    background-size: cover;
    color: black;
@@ -140,6 +145,7 @@ button:hover{
   flex: 2;
   position: relative;
 }
+
 
 .icon {
   position: relative;
@@ -163,7 +169,7 @@ button:hover{
 
 .step p {
   position: relative;
-  top: -5rem; 
+  top: -rem; 
   font-weight: bold;
   font-size: 20px;
   color: #333;
@@ -177,7 +183,7 @@ button:hover{
   width: 19rem;
 }
 
-.card img{
+#customer{
   width: 100px;
   height: 110px;
   border-radius: 50px;
@@ -187,4 +193,89 @@ button:hover{
 .card:hover{
   transform: scale(1.05);
 
+}
+
+.accordion-button h2{
+  font-size: 20px;
+}
+
+.accordion-collapse p{
+  font-size: 20px;
+}
+
+.contact-banner {
+  background-color: rgba(0, 0, 0, 0.8); /* fallback overlay */
+  backdrop-filter: blur(2px);
+}
+.contact-banner span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.footer {
+  background: linear-gradient(135deg, #1c1c37, #11112b);
+}
+
+.footer-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-title::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #f5b942;
+  display: block;
+  margin-top: 6px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #d1d1e0;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #d1d1e0;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f5b942;
+  padding-left: 6px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f5b942;
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 30px 0 15px;
 }
