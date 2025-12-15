@@ -146,6 +146,25 @@ h1,p{
   position: relative;
 }
 
+.step p {
+  position: relative;
+  top: -5rem; 
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.steps img{
+  background-color: #F2A900;
+  border-radius: 50%;
+  padding: 10px 10px;
+  width: 100px;
+}
+
+.steps p{
+   font-size: 18px;
+   margin-top: 1rem;
+}
 
 .icon {
   position: relative;
