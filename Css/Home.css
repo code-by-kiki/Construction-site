@@ -164,7 +164,7 @@ button:hover{
 
 @media (max-width: 768px) {
   .process-flow {
-    flex-direction: column;   /* stack vertically */
+    flex-direction: column;   
     align-items: center;
   }
 

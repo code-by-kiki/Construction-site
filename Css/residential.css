@@ -17,12 +17,15 @@ button:hover{
 }
 
 .Residential{
-  height: 60vh;
+  height: 85vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   animation: bgSlide 15s infinite;
+  
 }
+
+
 
 .overlay{
   
